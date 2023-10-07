@@ -10,29 +10,25 @@ header {
   color: #8b9dc3;
   padding: 15px 20px;
 }
-
-header h1 {
+header h1, header h2 {
   text-align: center;
 }
 
 nav {
   margin-top: 10px;
 }
-
 nav ul {
   list-style: none;
 }
-
 nav ul li {
   display: inline-block;
 }
-
 nav ul li a {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 4px;
+  transition: 0.4s;
 }
-
 nav ul li a:hover {
   background-color: #8b9dc3;
   color: #f7f7f7;

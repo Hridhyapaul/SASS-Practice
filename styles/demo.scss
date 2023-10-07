@@ -10,7 +10,7 @@ $para-fontSize: 15px;
 
 /* Browser Reset Code */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,28 +20,31 @@ header {
   background-color: $header-bgColor;
   color: $header-TextColor;
   padding: 15px 20px;
+  h1, h2 {
+    text-align: center;
+  }
 }
-header h1{
-  text-align: center;
-}
-nav{
+
+nav {
   margin-top: 10px;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: 0.4s;
+      }
+      a:hover {
+        background-color: $nav-bgColor;
+        color: $nav-hoverColor;
+      }
+    }
+  }
 }
-nav ul {
-  list-style: none;
-}
-nav ul li{
-  display: inline-block;
-}
-nav ul li a{
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-nav ul li a:hover{
-  background-color: $nav-bgColor;
-  color: $nav-hoverColor;
-}
+
 main {
   background-color: $main-bgColor;
   padding: 15px 20px;
