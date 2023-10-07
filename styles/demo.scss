@@ -1,8 +1,56 @@
+// variable declarations
+$header-bgColor: #f7f7f7;
+$header-TextColor: #8b9dc3;
+$main-bgColor: #dfe3ee;
+$footer-bgColor: #8b9dc3;
+$nav-bgColor: #8b9dc3;
+$nav-hoverColor: #f7f7f7;
+
+$para-fontSize: 15px;
+
 /* Browser Reset Code */
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: $header-bgColor;
+  color: $header-TextColor;
+  padding: 15px 20px;
+}
+header h1{
+  text-align: center;
+}
+nav{
+  margin-top: 10px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+nav ul li a:hover{
+  background-color: $nav-bgColor;
+  color: $nav-hoverColor;
+}
+main {
+  background-color: $main-bgColor;
+  padding: 15px 20px;
+}
+
+#content p {
+  font-size: $para-fontSize;
+}
+
+footer {
+  background-color: $footer-bgColor;
 }
